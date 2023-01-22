@@ -1,0 +1,169 @@
+.mySlides {
+	display: none;
+}
+
+body {
+	color: white;
+    background-color: rgb(19, 55, 55);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.head {
+	margin-top: 20px;
+	margin-right: 20vw;
+	text-align: center;
+	font-size: 65px;
+	color: white;
+}
+
+.data-container {
+	width: 600px;
+	height: 384px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.bar {
+	width: 28px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: #663dcd;
+	transition: 0.2s all ease;
+}
+
+.bar__id {
+	position: absolute;
+	top: -24px;
+	width: 100%;
+	text-align: center;
+}
+.btn1 {
+	padding: 6px;
+	font-weight: bolder;
+	background-color: rgb(84, 82, 82);
+	border-radius: 13px;
+	font-size: 16px;
+    border: 1.8px solid black;
+    cursor: pointer;
+	/* margin-left: 37vw; */
+	margin-top: 4vw;
+	margin-right: 1vw;
+}
+.btn2 {
+	padding: 6px;
+	font-weight: bolder;
+	background-color: rgb(84, 82, 82);
+	border-radius: 13px;
+	font-size: 16px;
+    border: 1.8px solid black;
+    cursor: pointer;
+}
+
+.algo{
+  float: left;
+  color: #13c6e3;
+  width: 500px;
+  margin-top: 70px;
+  margin-left: 70px;
+  font-size: 17px;
+  box-shadow: 0px 4px 18px #876a6a;
+    padding: 10px;
+    border: 2px solid black;
+}
+.graph{
+  float: right;
+  margin-right: 100px;
+}
+
+
+
+
+/* CSS of Navbar */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:black;
+  }
+  
+  li {
+    float: left;
+    font-size: 17px;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 7px 19px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    color: red;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: black;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+section{
+    color: white;
+    background-color: rgb(19, 55, 55);
+    /* min-height: 93.5vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+    padding-top: 150px;
+}
+
+.container{
+    width : 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.texts p{
+    color: white;
+    background-color: rgb(19, 55, 55);
+    padding: 10px 35px;
+    margin-bottom: 20px;
+}

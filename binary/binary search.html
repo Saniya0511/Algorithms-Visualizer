@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="binary search.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+        <li><a href="../Index.html">HOME</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">SEARCHING</a>
+          <div class="dropdown-content">
+            <a href="../linear/linear search.html">Linear Search</a>
+            <a href="../binary/binary search.html">Binary Search</a>
+          </div>
+        </li>
+        <li class="dropdown">
+            <a class="dropbtn">SORTING</a>
+            <div class="dropdown-content">
+              <a href="../bubble/bubble sort.html">Bobble Sort</a>
+              <a href="../selection/selection sort.html">Selection Sort</a>
+              <a href="../insertion/insertion sort.html">Insertion Sort</a>
+              <a href="../merge/merge sort.html">Merge Sort</a>
+              <a href="../quick/quick sort.html">Quick Sort</a>
+            </div>
+          </li>
+          <li style="margin-left: 930px">
+            <a href="./Quiz/index.html" style="color: rgb(255, 102, 0); font-weight: bolder; font-family: 'Courier New', Courier, monospace; font-size: 19px;"> <b> QUIZ</b></a>
+          </li>
+    </ul>
+</nav>
+  <br />
+  <p class="header">Binary Search</p>
+  <div class="algo">
+    <p style="font-size: 20px"> <i>"Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half." </p> <br></i>
+    <p>  <b> Binary Search Algorithm:</b> <br> The basic steps to perform Binary Search are: <br>
+
+      1. Begin with the mid element of the whole array as a search key.<br>
+      2. If the value of the search key is equal to the item then return an index of the search key.<br>
+      3. Or if the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half.<br>
+      4. Otherwise, narrow it to the upper half.<br>
+      5. Repeatedly check from the second point until the value is found or the interval is empty.</p>
+      <br>
+      <p style="color: #df1053;"><b><i> TIME COMPLEXITY : O(log N) <br>
+        SPACE COMPLEXITY : O(1)</i></b></p>
+  </div>
+  <div class="graph">
+    <div id="array"></div>
+    <br /><br />
+    <div id="inputContent">
+      <label for="fname" class="tag">
+        Number to be Searched :
+      </label>
+      <input type="text" id="fname" name="fname" />
+      <button id="btn" onclick="BinarySearch()">Search
+      </button>
+      <br />
+      <br />
+      <div id="text"></div>
+    </div>
+  </div>
+  <script src="binary search.js"></script>
+</body>
+
+</html>

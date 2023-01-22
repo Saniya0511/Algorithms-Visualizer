@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="bubble sort.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+        <li><a href="../Index.html">HOME</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">SEARCHING</a>
+          <div class="dropdown-content">
+            <a href="../linear/linear search.html">Linear Search</a>
+            <a href="../binary/binary search.html">Binary Search</a>
+          </div>
+        </li>
+        <li class="dropdown">
+            <a class="dropbtn">SORTING</a>
+            <div class="dropdown-content">
+              <a href="../bubble/bubble sort.html">Bobble Sort</a>
+              <a href="../selection/selection sort.html">Selection Sort</a>
+              <a href="../insertion/insertion sort.html">Insertion Sort</a>
+              <a href="../merge/merge sort.html">Merge Sort</a>
+              <a href="../quick/quick sort.html">Quick Sort</a>
+            </div>
+          </li>
+          <li style="margin-left: 930px">
+            <a href="./Quiz/index.html" style="color: rgb(255, 102, 0); font-weight: bolder; font-family: 'Courier New', Courier, monospace; font-size: 19px;"> <b> QUIZ</b></a>
+          </li>
+    </ul>
+</nav>
+  <br />
+  <p class="header">Bubble Sort</p>
+  <div class="algo">
+    <p style="font-size: 20px"> <i>"Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high." </p> <br></i>
+    <p>  <b> Bubble Sort Algorithm:</b> <br> The basic steps to perform Bubble Sort are: <br>
+
+      1.Run a nested for loop to traverse the input array using two variables i and j, such that 0 ≤ i < n-1 and 0 ≤ j < n-i-1<br>
+      2. If arr[j] is greater than arr[j+1] then swap these adjacent elements, else move on<br>
+      3. Print the sorted array<br></p>
+      <br>
+      <p style="color: #df1053;"><b><i> TIME COMPLEXITY : O(N^2) <br>
+        SPACE COMPLEXITY : O(1)</i></b></p>
+  </div>
+  <div class="graph">
+    <div id="array"></div>
+  </div>
+  <script src="bubble sort.js"></script>
+</body>
+
+</html>

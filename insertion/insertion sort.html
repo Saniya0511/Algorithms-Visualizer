@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- head -->
+<head>
+	
+	<!-- linking style.css -->
+  <link rel="stylesheet" href="insertion sort.css">
+	<link href="style.css" rel="stylesheet" />
+</head>
+
+<!-- body -->
+<body>
+	<nav>
+    <ul>
+        <li><a href="../Index.html">HOME</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">SEARCHING</a>
+          <div class="dropdown-content">
+            <a href="../linear/linear search.html">Linear Search</a>
+            <a href="../binary/binary search.html">Binary Search</a>
+          </div>
+        </li>
+        <li class="dropdown">
+            <a class="dropbtn">SORTING</a>
+            <div class="dropdown-content">
+              <a href="../bubble/bubble sort.html">Bobble Sort</a>
+              <a href="../selection/selection sort.html">Selection Sort</a>
+              <a href="../insertion/insertion sort.html">Insertion Sort</a>
+              <a href="../merge/merge sort.html">Merge Sort</a>
+              <a href="../quick/quick sort.html">Quick Sort</a>
+            </div>
+          </li>
+          <li style="margin-left: 930px">
+            <a href="./Quiz/index.html" style="color: rgb(255, 102, 0); font-weight: bolder; font-family: 'Courier New', Courier, monospace; font-size: 19px;"> <b> QUIZ</b></a>
+          </li>
+</nav>
+	<section class="head">Insertion Sort</section>
+  <div class="algo">
+    <p style="font-size: 20px"> <i>"Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part." </p> <br></i>
+    <p>  <b> Insertion Sort Algorithm:</b> <br> To sort an array of size N in ascending order:  <br>
+  
+      1. Iterate from arr[1] to arr[N] over the array. <br>
+      2. Compare the current element (key) to its predecessor. <br>
+      3. If the key element is smaller than its predecessor, compare it to the elements before. Move the greater elements one position up to make space for the swapped element.<br>
+      <br>
+      <p style="color: #df1053;"><b><i> TIME COMPLEXITY : O(N^2) <br>
+        SPACE COMPLEXITY : O(1)</i></b></p>
+  </div>
+	<div class="graph">
+    <section class="data-container"></section>
+	<section id="ele"></section>
+	<div style="margin: auto; width: fit-content;">
+
+	<!-- "Generate New Array" button -->
+<button class="btn1"
+		onclick="generate()" id="Button1" >
+	Generate New Array</button>
+	
+<!-- "Insertion Sort" button -->
+<button class="btn2"
+		onclick="InsertionSort(),disable()"
+		id="Button2" >
+	Insertion Sort</button>
+  </div>
+	</div>	
+</body>
+
+<!-- linking index.js -->
+<script src="insertion sort.js"></script>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head -->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	
+	<!-- title -->
+	<title>Sorting Visualizer</title>
+
+	<!-- linking style.css -->
+	<link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="selection sort.css">
+</head>
+
+<!-- body -->
+<body >
+	<nav>
+    <ul>
+        <li><a href="../Index.html">HOME</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">SEARCHING</a>
+          <div class="dropdown-content">
+            <a href="../linear/linear search.html">Linear Search</a>
+            <a href="../binary/binary search.html">Binary Search</a>
+          </div>
+        </li>
+        <li class="dropdown">
+            <a class="dropbtn">SORTING</a>
+            <div class="dropdown-content">
+              <a href="../bubble/bubble sort.html">Bobble Sort</a>
+              <a href="../selection/selection sort.html">Selection Sort</a>
+              <a href="../insertion/insertion sort.html">Insertion Sort</a>
+              <a href="../merge/merge sort.html">Merge Sort</a>
+              <a href="../quick/quick sort.html">Quick Sort</a>
+            </div>
+          </li>
+          <li style="margin-left: 930px">
+            <a href="./Quiz/index.html" style="color: rgb(255, 102, 0); font-weight: bolder; font-family: 'Courier New', Courier, monospace; font-size: 19px;"> <b> QUIZ</b></a>
+          </li>
+    </ul>
+</nav>
+<section class="head">Selection Sort</section>
+<div class="algo">
+  <p style="font-size: 20px"> <i>"The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from the unsorted part and putting it at the beginning." </p> <br></i>
+  <p>  <b> Selection Sort Algorithm:</b> <br> The basic steps to perform Selection Sort are: <br>
+
+    1. Initialize minimum value(min_idx) to location 0.<br>
+    2. Traverse the array to find the minimum element in the array.<br>
+    3. While traversing if any element smaller than min_idx is found then swap both the values.<br>
+  4. Then, increment min_idx to point to the next element. <br>
+  5. Repeat until the array is sorted. <br></p>
+    <br>
+    <p style="color: #df1053;"><b><i> TIME COMPLEXITY : O(N^2) <br>
+      SPACE COMPLEXITY : O(1)</i></b></p>
+</div>
+<div class="graph">
+  <center>
+  <section class="data-container"></section>
+  
+  <!-- "Generate New Array" button -->
+  <button class="btn1" onclick="generate()" id="Button1" >
+    Generate New Array</button>
+    
+  <!-- "Selection Sort" button -->
+  <button class="btn2"
+      onclick="SelectionSort(),disable()" id="Button2" >
+    Selection Sort</button>
+  </center>
+</div>
+</body>
+
+<!-- linking index.js -->
+<script src="selection sort.js"></script>
+</html>

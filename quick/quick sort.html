@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="quick sort.css">
+</head>
+
+<body>
+	<nav>
+    <ul>
+        <li><a href="../Index.html">HOME</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">SEARCHING</a>
+          <div class="dropdown-content">
+            <a href="../linear/linear search.html">Linear Search</a>
+            <a href="../binary/binary search.html">Binary Search</a>
+          </div>
+        </li>
+        <li class="dropdown">
+            <a class="dropbtn">SORTING</a>
+            <div class="dropdown-content">
+              <a href="../bubble/bubble sort.html">Bobble Sort</a>
+              <a href="../selection/selection sort.html">Selection Sort</a>
+              <a href="../insertion/insertion sort.html">Insertion Sort</a>
+              <a href="../merge/merge sort.html">Merge Sort</a>
+              <a href="../quick/quick sort.html">Quick Sort</a>
+            </div>
+          </li>
+          <li style="margin-left: 930px">
+            <a href="./Quiz/index.html" style="color: rgb(255, 102, 0); font-weight: bolder; font-family: 'Courier New', Courier, monospace; font-size: 19px;"> <b> QUIZ</b></a>
+          </li>
+    </ul>
+</nav>
+	<br />
+	<p class="header">
+	Quick Sort
+	</p>
+  <div class="algo">
+    <p style="font-size: 20px"> <i>"QuickSort is a Divide and Conquer algorithm. It picks an element as a pivot and partitions the given array around the picked pivot." </p> <br></i>
+    <p>  <b> QuickSort Algorithm:</b> <br> To sort an array of size N in ascending order:  <br>
+      low = Starting index,  high = Ending index <br>
+
+ quickSort(arr[], low, high) { <br>
+
+    if (low < high) { <br>
+
+        /* pi is partitioning index, arr[pi] is now at right place */ <br>
+
+        pi = partition(arr, low, high); <br>
+
+        quickSort(arr, low, pi – 1);  // Before pi <br>
+
+        quickSort(arr, pi + 1, high); // After pi <br>
+    } <br>}
+      </p>
+      <br>
+      <p style="color: #df1053;"><b><i> TIME COMPLEXITY :- <br>  Worst Case: O(N^2) <br> Average Case : O(N log(N)) <br>
+      <br>  SPACE COMPLEXITY : O(1)</i></b></p>
+  </div>
+
+	<div class="graph">
+    <div id="array"></div>
+	<div id="count"></div>
+	<br />
+	<h2 class="range"
+		style="text-align: center"></h2>
+  </div>
+
+	<script src="quick sort.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="linear search.css">
+</head>
+
+<body>
+	<nav>
+    <ul>
+        <li><a href="../Index.html">HOME</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">SEARCHING</a>
+          <div class="dropdown-content">
+            <a href="../linear/linear search.html">Linear Search</a>
+            <a href="../binary/binary search.html">Binary Search</a>
+          </div>
+        </li>
+        <li class="dropdown">
+            <a class="dropbtn">SORTING</a>
+            <div class="dropdown-content">
+              <a href="../bubble/bubble sort.html">Bobble Sort</a>
+              <a href="../selection/selection sort.html">Selection Sort</a>
+              <a href="../insertion/insertion sort.html">Insertion Sort</a>
+              <a href="../merge/merge sort.html">Merge Sort</a>
+              <a href="../quick/quick sort.html">Quick Sort</a>
+            </div>
+          </li>
+          <li style="margin-left: 930px">
+            <a href="./Quiz/index.html" style="color: rgb(255, 102, 0); font-weight: bolder; font-family: 'Courier New', Courier, monospace; font-size: 19px;"> <b> QUIZ</b></a>
+          </li>
+      </ul>
+    </ul>
+</nav>
+	<br/>
+	<p class="header">Linear Search</p>
+  <div class="algo">
+    <p style="font-size: 20px"> <i>"Linear Search is defined as a sequential search algorithm that starts at one end and goes through each element of a list until the desired element is found, otherwise the search continues till the end of the data set. " </p> <br></i>
+    <p>  <b> Linear Search Algorithm:</b> <br> The basic steps to perform Linear Search are: <br>
+
+      1. Start from the leftmost element of arr[] and one by one compare x with each element of arr[]<br>
+      2. If x matches with an element, return the index.<br>
+      3. If x does not match with any of the elements, return -1.<br></p>
+      <br>
+      <p style="color: #df1053;"><b><i> TIME COMPLEXITY : O(N) <br>
+        SPACE COMPLEXITY : O(1)</i></b></p>
+  </div>
+	<div class="graph">
+    <div id="array"></div>
+    <br /><br />
+    <div id="inputContent">
+    <label for="fname" class="tag">
+      Number to be Searched :
+    </label>
+    <input type="text" id="fname" name="fname" />
+    <button id="btn"
+        onclick="LinearSearch()">Search
+    </button>
+    <br />
+    <br />
+    <div id="text"></div>
+    </div>
+  </div>
+
+	<script src="linear search.js"></script>
+</body>
+</html>

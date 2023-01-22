@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="merge sort.css">
+</head>
+
+<body style = "color: white;
+background-color: rgb(19, 55, 55);">
+	<nav>
+    <ul>
+        <li><a href="../Index.html">HOME</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">SEARCHING</a>
+          <div class="dropdown-content">
+            <a href="../linear/linear search.html">Linear Search</a>
+            <a href="../binary/binary search.html">Binary Search</a>
+          </div>
+        </li>
+        <li class="dropdown">
+            <a class="dropbtn">SORTING</a>
+            <div class="dropdown-content">
+              <a href="../bubble/bubble sort.html">Bobble Sort</a>
+              <a href="../selection/selection sort.html">Selection Sort</a>
+              <a href="../insertion/insertion sort.html">Insertion Sort</a>
+              <a href="../merge/merge sort.html">Merge Sort</a>
+              <a href="../quick/quick sort.html">Quick Sort</a>
+            </div>
+          </li>
+          <li style="margin-left: 930px">
+            <a href="./Quiz/index.html" style="color: rgb(255, 102, 0); font-weight: bolder; font-family: 'Courier New', Courier, monospace; font-size: 19px;"> <b> QUIZ</b></a>
+          </li>
+    </ul>
+</nav>
+  <center>
+	<h1 class="title">Merge Sort</h1>
+</center>
+  <div class="algo">
+    <p style="font-size: 20px"> <i>"The Merge Sort algorithm is a sorting algorithm that is based on the Divide and Conquer paradigm. In this algorithm, the array is initially divided into two equal halves and then they are combined in a sorted manner." </p> <br></i>
+    <p>  <b> Merge Sort Algorithm:</b> <br> To sort an array of size N in ascending order:  <br>
+      step 1: start <br>
+
+      step 2: declare array and left, right, mid variable <br>
+      
+      step 3: perform merge function.<br>
+          if left > right <br>
+              return <br>
+          mid= (left+right)/2<br>
+          mergesort(array, left, mid)<br>
+          mergesort(array, mid+1, right)<br>
+          merge(array, left, mid, right)<br>
+      
+      step 4: Stop</p>
+      <br>
+      <p style="color: #df1053;"><b><i> TIME COMPLEXITY : O(N log(N)) <br>
+        SPACE COMPLEXITY : O(1)</i></b></p>
+  </div>
+	<div class="graph">
+    <h2 class="title1">Array is not sorted</h2>
+
+	<canvas id="Canvas"></canvas>
+  </div>
+	
+	<script src="merge sort.js"></script>
+</body>
+
+</html>
