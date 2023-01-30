@@ -51,3 +51,18 @@ button {
   font-family: inherit;
   padding: 1.3rem;
 }
+
+
+.backBtn{
+  position: absolute;
+  top: 16px;
+  left: 34px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color:white;
+  font-family: 'Courier New', Courier, monospace;
+}
+.backBtn:hover{
+  color: red;
+}
